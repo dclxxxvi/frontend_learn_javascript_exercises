@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      } else {
+        return confirm('Родители разрешили?');
+      }
+    }
+    // переписать без if
+    function checkAge(age) {
+      return (age > 18) ? true : confirm('Родители разрешили?');
+    } // первый способ
+    function checkAge(age) {
+      return (age > 18) || confirm('Родители разрешили?');
+    } // второй способ
+  </script>
+</body>
+</html>
